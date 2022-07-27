@@ -1,0 +1,151 @@
+.design {
+  padding: rem(115) 0 rem(140);
+
+  &-wrapper {
+    width: 50%;
+  }
+
+  @media screen and (max-width: $desktop - 1px) {
+    padding: rem(300) 0 rem(25);
+
+    &-wrapper {
+      width: 100%;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  p {
+    font-size: rem(26);
+
+    @media screen and (max-width: $desktop - 1px) {
+      font-size: rem(12);
+      text-align: center;
+    }
+  }
+
+  &__selectors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: rem(40);
+    margin: rem(30) 0 rem(80);
+
+    @media screen and (max-width: $desktop - 1px) {
+      margin: rem(10) 0 rem(28);
+      row-gap: rem(19);
+      justify-items: center;
+    }
+  }
+
+  .circle-btn, .outline {
+    display: block;
+    position: relative;
+    width: rem(80);
+    height: rem(80);
+    border-radius: 9999px;
+    cursor: pointer;
+
+    .outline {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 6px solid $purple;
+      outline: none;
+    }
+
+    @media screen and (max-width: $desktop - 1px) {
+      width: rem(40);
+      height: rem(40);
+
+      .outline {
+        border-width: 4px;
+      }
+    }
+
+    input {
+      display: none;
+    }
+
+    input:checked ~ .outline {
+      display: block;
+    }
+  }
+
+  .split-gray-blue {
+    background: linear-gradient( -45deg, #3caed3 50%, #e6e3d3 50% );
+  }
+
+  .split-white-red {
+    background: linear-gradient( -45deg, #c84545 50%, #fff 50% );
+  }
+
+  .split-gray-green {
+    background: linear-gradient( -45deg, #62c46b 50%, #f7f7f7 50% );
+  }
+
+  .split-red-yellow {
+    background: linear-gradient( -45deg, #e8c537 50%, #d4442b 50% );
+  }
+
+  .split-dark-blue-pink {
+    background: linear-gradient( -45deg, #ef5770 50%, #170b46 50% );
+  }
+
+  .split-gray {
+    background: linear-gradient( -45deg, #555067 50%, #deecee 50% );
+  }
+
+  .split-yellow-red {
+    background: linear-gradient( -45deg, #c84545 50%, #f3e29b 50% );
+  }
+
+  .split-gray-purple {
+    background: linear-gradient( -45deg, #aa61a9 50%, #f7f7f7 50% );
+  }
+
+  .split-gray-yellow {
+    background: linear-gradient( -45deg, #e8c537 50%, #f2f1e9 50% );
+  }
+
+  .split-blue-pink {
+    background: linear-gradient( -45deg, #ef5770 50%, #9dd6e9 50% );
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(160);
+
+    @media screen and (max-width: $desktop - 1px) {
+      flex-direction: column;
+      row-gap: rem(5);
+      margin-top: rem(33);
+    }
+
+    &-block {
+      display: flex;
+      align-items: flex-start;
+      column-gap: rem(15);
+
+      img {
+        width: rem(40);
+      }
+
+      @media screen and (max-width: $desktop - 1px) {
+        p {
+          text-align: left;
+          font-size: rem(16);
+        }
+
+        img {
+          width: rem(20);
+        }
+      }
+    }
+  }
+}

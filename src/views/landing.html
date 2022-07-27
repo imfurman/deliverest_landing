@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Главная</title>
+  @@include('./includes/_head.html')
+</head>
+
+<body>
+  <div class="page-layout">
+    @@include('./includes/_header.html')
+    <main class="main">
+      <section class="intro intro-landing">
+        <div class="content-wrapper intro__wrapper">
+          <div class="intro__design">
+            <img class="intro__design-border" src="media/images/border.png" alt="">
+            <img class="intro__design-content" src="media/images/design.png" alt="">
+          </div>
+          <h1 class="intro__title intro__title-uppercase">
+            Make an app for your restaurant in three simple steps in our app builder
+          </h1>
+          <p class="intro__description">Get rid of aggregators - start developing your own sales channel!</p>
+        </div>
+      </section>
+      <section class="design">
+        <div class="content-wrapper">
+          <div class="design-wrapper">
+            <p>Let’s start?<br>
+               Step 1: Choose your color scheme
+            </p>
+            <form class="design__selectors">
+              <label class="circle-btn split-gray-blue">
+                <input type="radio" value="1" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-white-red">
+                <input type="radio" value="2" name="designId" checked>
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-gray-green">
+                <input type="radio" value="3" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-red-yellow">
+                <input type="radio" value="4" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-dark-blue-pink">
+                <input type="radio" value="5" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-gray">
+                <input type="radio" value="6" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-yellow-red">
+                <input type="radio" value="7" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-gray-purple">
+                <input type="radio" value="8" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-gray-yellow">
+                <input type="radio" value="9" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-blue-pink">
+                <input type="radio" value="10" name="designId">
+                <span class="outline"></span>
+              </label>
+            </form>
+            <button class="button button--primary intro__btn js-open-modal" type="button">GO NEXT</button>
+          </div>
+          <div class="design__description">
+            <div class="design__description-block">
+              <img src="media/icons/check.svg">
+              <p>Your own App personalized<br>
+                 and branded for you
+              </p>
+            </div>
+            <div class="design__description-block">
+              <img src="media/icons/check.svg">
+              <p>Get orders by email or in<br>
+                 your POS system software
+              </p>
+            </div>
+            <div class="design__description-block">
+              <img src="media/icons/check.svg">
+              <p>Allows you to place orders<br>
+                 by both pickup and delivery
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="details">
+        <div class="content-wrapper">
+          <h2>
+            Get your own branded app<br>
+            as simple as that
+          </h2>
+          <div class="details__steps">
+            <div class="details__steps-block">
+              <span>1</span>
+              <img src="media/icons/gray-notes.svg">
+            </div>
+            <div class="details__steps-block">
+              <span>2</span>
+              <img src="media/icons/gray-settings.svg">
+            </div>
+            <div class="details__steps-block">
+              <span>3</span>
+              <img src="media/icons/gray-phone.svg">
+            </div>
+            <p>Choose the design and grid you like, fill in the catalogue</p>
+            <p>Send it to our moderators to check if everything is right</p>
+            <p>We build your app and publish it in App Store and Google Play</p>
+          </div>
+          <h2>Pricing</h2>
+          <p class="pricing__description">
+            You make a one-time payment for building your application.
+            After placing it in the App Store and Google Play and starting work, the subscription fee
+            depends on how much orders per month you get.
+          </p>
+          <ul class="pricing">
+            <li class="pricing__type">One-time fee</li>
+            <li>Build for Apple iOS <span>$10</span></li>
+            <li>Build for Google Android <span>$10</span></li>
+            <li class="pricing__type">Monthly plan</li>
+            <li>100 orders or less <span>$5</span></li>
+            <li>101 - 300 orders <span>$10</span></li>
+            <li>301 - 500 orders <span>$15</span></li>
+            <li>501 orders or more <span>$20</span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    @@include('./includes/_footer.html')
+  </div>
+  <div class="layout">
+    <div class="modal">
+      <button class="modal__close" type="button" title="Закрыть">
+        <img src="media/images/icon-close.svg" alt="">
+      </button>
+      <div class="modal__content form-request">
+        <h3 class="form-request__title">Запрос демоверсии</h3>
+        <div class="form-request__text">
+          <p>Вы можете оставить свои контактные данные и все, что сочтете
+            нужным, а какой-то чувак позвонит вам или напишет, чтобы обговорить
+            всю херню. После чего по Скайпу покажет нашу систему и попытается
+            вас впечатлить.</p>
+        </div>
+        <form class="form-request__form">
+          <div class="field">
+            <label class="floating-label" for="name">
+              <input class="text-field floating-label__input" name="name" id="name" placeholder="Как вас зовут*"
+                value="Константин">
+              <span class="floating-label__label">Как вас зовут*</span>
+            </label>
+          </div>
+          <div class="field">
+            <label class="floating-label" for="country">
+              <!--<input class="text-field floating-label__input" name="country" id="country" placeholder="Страна*"
+                value="Россия">-->
+              <select class="chosen-select" name="country" id="country" data-placeholder=".">
+                <option value=""></option>
+                <option value="Россия">Россия</option>
+                <option value="Россия">Казахстан</option>
+                <option value="Россия">Белоруссия</option>
+                <option value="Россия">Узбекистан</option>
+              </select>
+              <span class="floating-label__label">Страна*</span>
+            </label>
+          </div>
+          <div class="field">
+            <label class="floating-label" for="email">
+              <input class="text-field floating-label__input" name="email" id="email" placeholder="Электронная почта*">
+              <span class="floating-label__label">Электронная почта*</span>
+            </label>
+          </div>
+          <div class="field">
+            <span class="pre-label">+7</span>
+            <label class="floating-label" for="phone">
+              <input class="text-field floating-label__input" name="phone" id="phone" placeholder="Телефон*">
+              <span class="floating-label__label">Телефон*</span>
+            </label>
+          </div>
+          <div class="field field--full-width">
+            <label class="floating-label" for="comments">
+              <textarea class="text-field floating-label__input" name="comments" id="comments"
+                placeholder="Комментарий"></textarea>
+              <span class="floating-label__label">Комментарий</span>
+            </label>
+          </div>
+          <button class="button button--primary button--small form-request__btn" type="button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

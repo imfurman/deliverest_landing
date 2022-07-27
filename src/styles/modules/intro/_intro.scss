@@ -4,13 +4,25 @@
   color: $white;
   background: $darkGray;
 
+  &-landing {
+    padding: rem(30) 0 rem(285);
+  }
+
   @media screen and (max-width: $desktop - 1px) {
     text-align: center;
     overflow: hidden;
+
+    &-landing {
+      overflow: unset;
+    }
   }
 
   @media screen and (min-width: $desktop) {
     padding: rem(101) 0 rem(121);
+
+    &-landing {
+      padding: rem(150) 0 rem(135);
+    }
   }
 
   //@media screen and (min-width: $desktopMax) {}
@@ -24,8 +36,19 @@
     line-height: 1.2;
     font-size: vw($mobile, 24px);
 
+    &-uppercase {
+      text-transform: uppercase;
+      margin-bottom: rem(25);
+      font-size: rem(20);
+      font-weight: bold;
+    }
+
     @media screen and (max-width: $desktop - 1px) {
       font-weight: 300;
+
+      &-uppercase {
+        font-weight: bold;
+      }
     }
 
     @media screen and (min-width: $desktop) {
@@ -35,6 +58,24 @@
       max-width: rem(705);
       margin-bottom: rem(46);
       font-size: rem(58);
+
+      &-uppercase {
+        font-size: rem(44);
+        margin-bottom: rem(60);
+      }
+    }
+  }
+
+  &__description {
+    color: $green;
+    font-size: rem(36);
+    width: 50%;
+
+    @media screen and (max-width: $desktop - 1px) {
+      font-weight: 300;
+      font-size: rem(16);
+      width: 85%;
+      margin: 0 auto;
     }
   }
 
@@ -70,6 +111,49 @@
     img {
       display: block;
       width: 100%;
+    }
+  }
+
+  &__design {
+    position: absolute;
+    right: 0;
+    top: -70px;
+    width: rem(512);
+    height: rem(1032);
+
+    img {
+      position: absolute;
+    }
+
+    &-border {
+      z-index: 1;
+    }
+
+    &-content {
+      top: 22px;
+      left: 29px;
+    }
+
+    @media screen and (max-width: $desktop - 1px) {
+      width: rem(255);
+      height: rem(517);
+      left: 0;
+      right: 0;
+      bottom: rem(-545);
+      top: unset;
+      margin-left: auto;
+      margin-right: auto;
+
+      &-border {
+        left: 0;
+        height: 100%;
+      }
+
+      &-content {
+        top: rem(12);
+        left: rem(14);
+        height: 97%;
+      }
     }
   }
 }
