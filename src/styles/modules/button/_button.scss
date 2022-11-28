@@ -60,6 +60,10 @@
     //     color: $blueDisabled;
     //   }
     // }
+    @media screen and (max-width: $desktop - 1px) {
+      border-radius: rem(8);
+      background: #7e60ec;
+    }
   }
 
   &--secondary {

@@ -14,6 +14,7 @@
 
     &-landing {
       overflow: unset;
+      padding-bottom: rem(30);
     }
   }
 
@@ -29,6 +30,10 @@
 
   &__wrapper {
     position: relative;
+    @media screen and (max-width: $desktop - 1px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -135,18 +140,17 @@
     }
 
     @media screen and (max-width: $desktop - 1px) {
-      width: rem(255);
+      position: relative;
+      width: rem(256);
       height: rem(517);
-      left: 0;
-      right: 0;
-      bottom: rem(-545);
-      top: unset;
+      inset: initial;
       margin-left: auto;
-      margin-right: auto;
+      margin-right: rem(20);
 
       &-border {
         left: 0;
         height: 100%;
+        position: static !important;
       }
 
       &-content {
@@ -154,6 +158,52 @@
         left: rem(14);
         height: 97%;
       }
+    }
+  }
+
+  &__colors {
+    display: none;
+    @media screen and (max-width: $desktop - 1px) {
+      padding: rem(28) 0 0 0;
+      display: block;
+      .circle-btn {
+        margin-bottom: rem(20);
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__circle {
+    display: none;
+    position: absolute;
+    right: rem(-20);
+    top: rem(-35);
+    background: #7e60ec;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: rem(100);
+    height: rem(100);
+    border-radius: 50%;
+    font-size: rem(14);
+    color: #fff;
+    text-align: center;
+    b {
+      line-height: rem(30);
+      font-size: rem(24);
+    }
+    @media screen and (max-width: $desktop - 1px) {
+      display: flex;
+    }
+  }
+
+  &__block {
+    @media screen and (max-width: $desktop - 1px) {
+      display: flex;
+      margin-top: rem(50);
+      order: 3;
     }
   }
 }

@@ -44,7 +44,8 @@
 }
 
 .header__logo {
-  width: vw($mobile, 103px);
+  object-fit: contain;
+  width: vw($mobile, 70px);
 
   @media screen and (min-width: $desktop) {
     width: rem(164);
@@ -184,5 +185,22 @@
     &:hover {
       text-decoration: none;
     }
+  }
+
+
+}
+
+
+.header__mob-button {
+  display: none;
+  color: #fff;
+  background: #7e60ec;
+  border-radius: 8px;
+  padding: 9px 30px;
+  font-size: 3vw;
+  border: 0;
+  box-shadow: 1px 1px 3px rgba(#000, 0.7);
+  @media screen and (max-width: $desktop - 1) {
+    display: block;
   }
 }

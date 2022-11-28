@@ -12,10 +12,54 @@
     <main class="main">
       <section class="intro intro-landing">
         <div class="content-wrapper intro__wrapper">
-          <div class="intro__design">
-            <img class="intro__design-border" src="media/images/border.png" alt="">
-            <img class="intro__design-content" src="media/images/design.png" alt="">
+          <div class="intro__block">
+            <div class="design intro__colors">
+              <label class="circle-btn split-gray-blue">
+                <input type="radio" value="1" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-white-red">
+                <input type="radio" value="2" name="designId" checked>
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-gray-green">
+                <input type="radio" value="3" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-red-yellow">
+                <input type="radio" value="4" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-dark-blue-pink">
+                <input type="radio" value="5" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-gray">
+                <input type="radio" value="6" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-yellow-red">
+                <input type="radio" value="7" name="designId">
+                <span class="outline"></span>
+              </label>
+              <label class="circle-btn split-gray-purple">
+                <input type="radio" value="8" name="designId">
+                <span class="outline"></span>
+              </label>
+
+            </div>
+
+            <div class="intro__design">
+              <img class="intro__design-border" src="media/images/border.png" alt="">
+              <img class="intro__design-content" src="media/images/design.png" alt="">
+              <div class="intro__circle">
+                From
+                <b>$ 4.90</b>
+                monthly
+              </div>
+            </div>
           </div>
+
           <h1 class="intro__title intro__title-uppercase">
             Make an app for your restaurant in three simple steps in our app builder
           </h1>
@@ -25,7 +69,7 @@
       <section class="design">
         <div class="content-wrapper">
           <div class="design-wrapper">
-            <p>Let’s start?<br>
+            <p class="design__text">Let’s start?<br>
                Step 1: Choose your color scheme
             </p>
             <form class="design__selectors">
@@ -70,7 +114,7 @@
                 <span class="outline"></span>
               </label>
             </form>
-            <button class="button button--primary intro__btn js-open-modal" type="button">GO NEXT</button>
+            <button class="button button--primary intro__btn js-open-modal" type="button">Get the app</button>
           </div>
           <div class="design__description">
             <div class="design__description-block">
